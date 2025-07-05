@@ -14,15 +14,6 @@ function changeColor () {
     }
 }
 
-function changeImageForButton(){
-    const buttonImage = document.getElementById("button-image");
-    if(currentTheme == "dark"){
-        buttonImage.src = "images/light-bulb.png"
-    } else {
-        buttonImage.src = "images/bulb-off.png"
-    }
-}
-
 function changePanelColorForButton(){
     const navPanel = document.getElementById("navigation_panel");
     if(currentTheme == "dark"){
@@ -38,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function(){
     const toggle = document.getElementById("bg-change");
     toggle.addEventListener("click", () => {
         changeColor();
-        changeImageForButton();
         changePanelColorForButton();
     });
 

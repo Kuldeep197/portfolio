@@ -1,0 +1,68 @@
+body{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark{
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.nav-panel{
+    display: flex;
+    justify-content: center;
+    margin: 50px 600px 50px 600px;
+    border-color: white;
+    border-radius: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-panel.lightPanel{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.nav-panel.darkPanel{
+    background-color: rgb(48, 46, 46);
+    color: #e0e0e0;
+}
+
+.nav-panel a{
+    color: inherit;
+}
+
+svg{
+    fill: currentColor;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.separator{
+    display: inline-block;
+    border-right: 1px solid gray;
+    height: 80%;
+}
+
+.icon-images{
+    width: 20px;
+}
+
+#bg-change{
+  border: none;          /* Removes the border */
+  background: none;      /* Removes the default background */
+  cursor: pointer;
+}
+
+#bg-change:focus{
+    outline: none;
+}

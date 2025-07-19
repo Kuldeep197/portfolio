@@ -1,6 +1,7 @@
 :root{
     --bg-color: #1a1a1a;
     --text-color: #e0e0e0;
+
 }
 
 body{
@@ -154,4 +155,34 @@ svg{
     box-sizing: border-box;
     width: 60rem;
     display: inline-block;
+}
+
+.Skills .skills-heading{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Skills .skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+    width: 60rem;
+}
+
+.Skills .skill{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 30px;
 }

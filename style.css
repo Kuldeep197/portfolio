@@ -200,14 +200,12 @@ svg{
     box-sizing: border-box;
     width: 60rem;
     height: 5rem;
-    background-color: red;
 }
 
 .work-experience-container .comp-image{
     object-fit: contain; 
-    background-color: yellow;
     box-sizing: border-box;
-    width:30%
+    width:15%
 }
 
 .work-experience-container .company-logo{
@@ -217,23 +215,34 @@ svg{
     width: 100%;
 }
 
-.work-experience-container .comp-details{
-    background-color: green;
+.work-experience-container .comp-container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .work-experience-container .comp-details{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
     box-sizing: border-box;
-    background-color: wheat;
     width: 100%;
+
+}
+.work-experience-container .comp-details .comp-meta .experience-accordion{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
 }
 
-.work-experience-container .joining-details{
-    align-items: left;
-    box-sizing: border-box;
-    width: 100%;
+.work-experience-container .comp-details .comp-meta .experience-accordion::click{
+    transform: rotate(90deg);
 }
+/*todo: rotate the arrow*/

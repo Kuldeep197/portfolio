@@ -31,5 +31,12 @@ document.addEventListener("DOMContentLoaded", function(){
         changeColor();
         changePanelColorForButton();
     });
-
+    const accordionToggle = document.getElementById("exp-accordion");
+    accordionToggle.addEventListener("click", () => {});
 })
+
+
+// This function is used to toggle the accordion for work experience details
+function toggleAccordion() {
+    
+}

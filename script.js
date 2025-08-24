@@ -25,18 +25,30 @@ function changePanelColorForButton(){
     }
 }
 
+// This function is used to toggle the accordion for work experience details
+function toggleAccordion(event) {
+    const arrow = event.currentTarget;
+    console.log("toggling accordion");
+    const container = arrow.closest('.comp-container');
+    const accordionContent = container.querySelector('.accordion-content');
+    console.log('content div :', accordionContent);
+    console.log('arrow :', arrow);
+    console.log("showing accordion");
+    accordionContent.classList.toggle("show");
+    arrow.classList.toggle("rotated");
+}
+
 document.addEventListener("DOMContentLoaded", function(){
+    console.log("DOM fully loaded and parsed");
     const toggle = document.getElementById("bg-change");
     toggle.addEventListener("click", () => {
         changeColor();
         changePanelColorForButton();
     });
-    const accordionToggle = document.getElementById("exp-accordion");
-    accordionToggle.addEventListener("click", () => {});
+    const accordionToggles = document.querySelectorAll(".experience-accordion");
+    accordionToggles.forEach(accordion => {
+        accordion.addEventListener("click", toggleAccordion);
+    });
 })
 
 
-// This function is used to toggle the accordion for work experience details
-function toggleAccordion() {
-    
-}
